@@ -107,7 +107,7 @@ export const ContentProvider = ({ children }) => {
 
   const fetchContent = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/content");
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/content`);
       const data = await res.json();
       setContent(data);
     } catch (err) {
@@ -123,7 +123,7 @@ export const ContentProvider = ({ children }) => {
 
   const updateSection = async (section, newData) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/content/${section}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/content/${section}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newData),
