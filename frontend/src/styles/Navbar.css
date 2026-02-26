@@ -101,3 +101,22 @@
     display: block;
   }
 }
+
+.admin-btn {
+  padding: 0.45rem 1rem;
+  background: transparent;
+  color: #2e7d32;
+  border: 1.5px solid #2e7d32;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.admin-btn:hover {
+  background: #2e7d32;
+  color: #fff;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -56,6 +57,9 @@ const Navbar = () => {
         <a href="#enquiry" className="enquiry-btn">
           Enquiry Now
         </a>
+        <Link to="/admin" className="admin-btn">
+          Admin
+        </Link>
       </div>
     </nav>
   );
